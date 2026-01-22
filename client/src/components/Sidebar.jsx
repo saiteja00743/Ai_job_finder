@@ -37,7 +37,10 @@ const Sidebar = () => {
 
             <div className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header" style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <h1 className="gradient-text" style={{ fontSize: '1.5rem', fontWeight: '800', margin: 0 }}>JobAI</h1>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                        <img src="/favicon.jpg" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '8px' }} />
+                        <h1 className="gradient-text" style={{ fontSize: '1.5rem', fontWeight: '800', margin: 0 }}>JobAI</h1>
+                    </div>
                     <button className="mobile-close" onClick={() => setIsOpen(false)}>
                         <X size={20} />
                     </button>
