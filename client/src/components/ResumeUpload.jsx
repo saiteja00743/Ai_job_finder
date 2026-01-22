@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { UploadCloud, FileText, Check } from 'lucide-react';
-import { uploadResume } from '../api';
-import axios from 'axios';
+import { uploadResume, default as api } from '../api';
 
 const ResumeUpload = () => {
     const [file, setFile] = useState(null);
@@ -17,7 +16,7 @@ const ResumeUpload = () => {
 
     const checkExistingResume = async () => {
         try {
-            const { data } = await axios.get('http://localhost:3000/api/resume-status');
+            const { data } = await api.get('/resume-status');
             if (data.hasResume) {
                 setExistingResume(data);
                 setSuccess(true);
