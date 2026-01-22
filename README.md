@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI-Powered Job Tracker with Smart Matching
 
 A full-stack web application that helps job seekers find and track opportunities using AI-powered resume matching, intelligent filtering, and automated application tracking.
@@ -791,3 +792,7 @@ For detailed instructions on how to deploy this application to production (Railw
 ---
 
 **Built with ❤️ for the AI Job Tracker Assessment**
+=======
+# AI-Job-Tracker
+resume ai analyser
+>>>>>>> aae15aa2275a7b94f67992dced970617317937af
